@@ -13,10 +13,13 @@ class LoginScreen extends StatelessWidget {
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
 
+
   final AuthService authService = AuthService();
 
   @override
   Widget build(BuildContext context) {
+  _emailController.text= "fabio.alvaro@gmail.com";
+_passwordController.text = "senha123";
     return Scaffold(
       backgroundColor: Colors.grey,
       body: Container(
